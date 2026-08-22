@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Pessoal - UNINTER</title>
-    <!-- Vinculação do arquivo CSS na pasta css/ -->
+    <!-- Vinculação do CSS externo conforme boas práticas -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="light-theme">
 
-    <!-- Cabeçalho fixo com o menu de navegação por âncoras (Exigência do projeto) -->
+    <!-- Cabeçalho fixo com o menu de navegação por âncoras (Exigência da Atividade) -->
     <header class="navbar">
         <div class="logo">
             <h2>Meu Portfólio</h2>
@@ -22,7 +22,7 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <!-- Botão para alternar entre tema claro e escuro usando JS -->
+        <!-- Botão para alternar entre tema claro e escuro usando JS NATIVO -->
         <button id="theme-toggle" class="btn-theme">Modo Escuro</button>
     </header>
 
@@ -32,8 +32,8 @@
             <div class="container">
                 <h1>Sobre Mim</h1>
                 <p>Olá! Seja bem-vindo ao meu portfólio acadêmico e profissional.</p>
-                <p>Atualmente estou cursando Tecnologia em Análise e Desenvolvimento de Sistemas na Uninter. Tenho paixão por tecnologia, desenvolvimento web e solução de problemas através do código.</p>
-                <p><strong>Hobbies:</strong> Leitura sobre tecnologia, jogos de estratégia, projetos de código aberto e fotografia nas horas vagas.</p>
+                <p>Atualmente estou cursando Tecnologia em Análise e Desenvolvimento de Sistemas na UNINTER. Tenho grande interesse por desenvolvimento de sistemas, engenharia de software e resolução de problemas complexos.</p>
+                <p><strong>Hobbies:</strong> Estudos de tecnologia, leitura técnica, projetos open-source e jogos de lógica.</p>
             </div>
         </section>
 
@@ -59,8 +59,8 @@
                 <div class="card">
                     <h3>Cursos Complementares</h3>
                     <ul>
-                        <li>Fundamentos da Programação Web (HTML5, CSS3, JavaScript)</li>
-                        <li>Lógica de Programação e Estrutura de Dados</li>
+                        <li>Fundamentos da Programação Web (HTML5, CSS3, JavaScript Nátivo)</li>
+                        <li>Lógica de Programação e Arquitetura de Sistemas</li>
                     </ul>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="portfolio-card">
                         <h3>Projeto 2: Portfólio Pessoal Web</h3>
-                        <p>Site responsivo desenvolvido sem frameworks CSS/JS para a Atividade Prática UNINTER.</p>
+                        <p>Site responsivo desenvolvido sem frameworks para a Atividade Prática UNINTER.</p>
                         <a href="https://github.com" target="_blank" class="btn-link">Ver no GitHub</a>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                     </div>
 
                     <button type="submit" class="btn-submit">Enviar Mensagem</button>
-                    <!-- Área para mensagens de erro/sucesso gerenciadas via JS -->
+                    <!-- Área onde o JS exibirá a validação sem recarregar a página -->
                     <div id="form-feedback" class="feedback-msg"></div>
                 </form>
             </div>
@@ -117,7 +117,7 @@
         <p>&copy; 2026 - Desenvolvido para a Atividade Prática de Fundamentos da Programação Web - UNINTER.</p>
     </footer>
 
-    <!-- Vinculação do arquivo JS na pasta js/ -->
+    <!-- Vinculação do JavaScript Nativo (Vanilla JS) -->
     <script src="js/script.js"></script>
 </body>
 </html>
