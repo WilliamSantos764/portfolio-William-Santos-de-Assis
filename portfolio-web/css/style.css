@@ -1,0 +1,168 @@
+/* Variáveis para controle de tema Claro e Escuro */
+:root {
+    --bg-primary: #f4f6f9;
+    --bg-card: #ffffff;
+    --text-color: #333333;
+    --header-bg: #1e293b;
+    --header-text: #ffffff;
+    --accent-color: #2563eb;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos aplicados quando o modo escuro estiver ativo */
+body.dark-theme {
+    --bg-primary: #0f172a;
+    --bg-card: #1e293b;
+    --text-color: #f8fafc;
+    --header-bg: #020617;
+    --header-text: #f8fafc;
+    --accent-color: #3b82f6;
+    --card-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Menu Superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--header-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.btn-theme {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Layout das seções principais */
+main {
+    margin-top: 70px;
+}
+
+.section {
+    padding: 4rem 2rem;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+h1, h2 {
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Estilização de Cards e Portfólio */
+.card, .portfolio-card {
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px var(--card-shadow);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Formulário e Contato */
+.form-contato {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.feedback-msg {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
